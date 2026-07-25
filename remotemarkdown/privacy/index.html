@@ -125,7 +125,7 @@
       <section class="page-section pt-0">
         <div class="container">
           <h1>RemoteMarkdown Privacy Policy</h1>
-          <p><strong>Effective Date:</strong> July 16, 2026</p>
+          <p><strong>Effective Date:</strong> July 25, 2026</p>
           <p>
             This Privacy Policy applies specifically to the
             <strong>RemoteMarkdown</strong> mobile application (the
@@ -216,6 +216,15 @@
             last workspace or document, review-prompt eligibility, and the last
             verified advertising-removal entitlement.
           </p>
+          <p>
+            Because this app-private data may include remote-server credentials,
+            remote paths, and unsaved document contents, RemoteMarkdown disables
+            Android app-data backup and excludes all app-private data from cloud
+            backup and device-to-device app-data transfer rules. This protects
+            sensitive workspace and recovery data from being restored onto
+            another device outside the Application's normal secure-storage
+            lifecycle.
+          </p>
 
           <h2>3. Google Analytics for Firebase</h2>
           <p>
@@ -223,10 +232,12 @@
             Firebase to understand feature usage and improve the Application.
             Google Analytics for Firebase may automatically process information
             such as IP address, approximate geographic region, app-instance and
-            device identifiers (which may include the Android advertising ID),
-            device model, operating system, app version, language, first launch,
-            app opens and updates, sessions, screen views, engagement, and
-            in-app-purchase events.
+            device identifiers, device model, operating system, app version,
+            language, first launch, app opens and updates, sessions, screen
+            views, engagement, and in-app-purchase events. RemoteMarkdown
+            disables Advertising ID collection by Firebase Analytics and
+            disables the use of Analytics data as an advertising-personalization
+            signal by default.
           </p>
           <p>The Application logs limited custom events concerning:</p>
           <ul>
@@ -265,12 +276,25 @@
             abuse.
           </p>
           <p>
+            RemoteMarkdown does not display an interstitial ad during the first
+            app session and does not accumulate interstitial-ad usage time during
+            that session. On later sessions, an interstitial may be shown only
+            after at least eight minutes of accumulated foreground use, after at
+            least one minute has passed since the current app launch, and at a
+            natural user-initiated screen transition. Background time and time
+            spent viewing an ad are not counted.
+          </p>
+          <p>
             Ad personalization and related privacy choices depend on the user's
             region, device settings, and choices presented through Google's
-            consent tools. Users may also reset or delete the Android advertising
-            ID through Android settings. When the Application confirms that the
-            user owns the advertising-removal purchase, the Application does not
-            request banner or interstitial ads.
+            User Messaging Platform consent tools. Before requesting ads,
+            RemoteMarkdown refreshes the applicable consent information, displays
+            a consent form when required, and requests banner or interstitial ads
+            only when the Google consent SDK reports that ads may be requested.
+            Users may also reset or delete the Android advertising ID through
+            Android settings. When the Application confirms that the user owns
+            the advertising-removal purchase, the Application does not request
+            banner or interstitial ads.
           </p>
 
           <h2>5. Google Play Purchases and Reviews</h2>
@@ -368,6 +392,11 @@
               Uninstalling the Application removes its local app data through the
               operating system, but does not delete files stored on a user's NAS,
               remote server, device folder, or cloud-storage account.
+            </li>
+            <li>
+              RemoteMarkdown does not include app-private workspace,
+              credential, preference, or recovery data in Android cloud backup
+              or device-to-device app-data transfer.
             </li>
             <li>
               Information already processed by Google is retained and deleted in
